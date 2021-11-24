@@ -1,0 +1,33 @@
+.titleBorder{
+  text-align: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 1rem 0;
+  margin-top: 4rem;
+}
+
+.title-container h1{
+  text-transform: capitalize;
+  font-size: 4rem;
+  letter-spacing: 5px;
+}
+
+.navigation-bar-container{
+  justify-content: center;
+  text-align: center;
+}
+
+.menu-navigazione a{
+  font-size: 1.5em;
+  text-decoration: none;
+  color: black;
+}
+
+
+@media screen and (max-width: 500px) {
+  
+  body{
+    color:red
+  }
+}
+
