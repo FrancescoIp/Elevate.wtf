@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion'
 import Header from '../header'
-import Body from './body'
+import Servizi from './servizi'
+import Carosello from '../carosello'
+import Contatti from '../contatti/contatti'
 
 const variantsBody = {
   hidden: {
@@ -23,7 +25,9 @@ function LandingPage() {
      animate="visible"
     >
       <Header />
-      <Body />
+      <Carosello />
+      <Servizi />
+      <Contatti />
     </motion.div>
   )
 }

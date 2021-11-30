@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import LandingPage from '../components/landingPage'
 import LandingAnimation from '../components/landingAnimation'
+import Footer from '../components/footer'
 import styles from '../styles/Home.module.css'
 import { useState } from 'react'
 import { AnimatePresence } from 'framer-motion'
@@ -9,8 +10,8 @@ import { AnimatePresence } from 'framer-motion'
 
 
 function Home() {
-  // set to false if you want to skeep the loading phase.
-  const [loading, setLoading] = useState(true);
+  // set loading to false if you want to skeep the loading phase.
+  const [loading, setLoading] = useState(false);
 
 
   return (
@@ -28,7 +29,7 @@ function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <p>footer</p>
+        <Footer/>
       </footer>
     </div>
   )

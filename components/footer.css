@@ -1,0 +1,14 @@
+.menu-navigazione-footer{
+  text-align: center;
+}
+
+.menu-navigazione-footer a{
+  font-size: 1.5em;
+  text-decoration: none;
+  color: black;
+}
+
+.navigazione-footer li{
+  display: inline;
+  margin: 0 6px;
+}

@@ -1,6 +1,9 @@
 import '../styles/globals.css'
-import 'bootstrap/dist/css/bootstrap.css'
 import '../components/header.css'
+import '../components/landingPage/servizi.css'
+import '../components/contatti/contatti.css'
+import '../components/footer.css'
+import 'bootstrap/dist/css/bootstrap.css'
 import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {

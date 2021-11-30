@@ -71,63 +71,56 @@ const variantTitleh2 = {
 
 function Header() {
   return (
-    <motion.div 
+    <motion.div
       initial="hidden"
       animate="visible"
       variants={variantsNavContainer}
     >
-      <Row>
-        <Navbar expand="lg">
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav" className="navigation-bar-container">
-            <Nav>
-              <Row className="d-flex align-items-center justify-content-center menu-navigazione" >
-                <Col as={motion.div} whileHover={{ scale: 1.2, rotateX: 360, duration: 0.5 }}>
-                  <Link href="/">Home</Link>
-                </Col>
-                <Col as={motion.div} whileHover={{ scale: 1.2, rotateX: 360, duration: 0.5 }}>
-                  <Link href="#servizi">Servizi</Link>
-                </Col>
-                <Col
-                  as={motion.div}
-                  transition={{ repeat: Infinity, repeatType: "loop", duration: 2 }}
-                  animate={{ rotateY: 360 }}>
+      <Navbar expand="lg">
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav" className="navigation-bar-container">
+          <Nav>
+            <Row className="d-flex align-items-center justify-content-center menu-navigazione" >
+              <Col as={motion.div} whileHover={{ scale: 1.2, rotateX: 360, duration: 0.5 }}>
+                <Link href="/">Home</Link>
+              </Col>
+              <Col as={motion.div} whileHover={{ scale: 1.2, rotateX: 360, duration: 0.5 }}>
+                <Link href="#servizi">Servizi</Link>
+              </Col>
+              <Col
+                as={motion.div}
+                transition={{ repeat: Infinity, repeatType: "loop", duration: 2 }}
+                animate={{ rotateY: 360 }}>
 
-                  <Image
-                    alt="LOGO"
-                    src="/prisma.1.png"
-                    width={300}
-                    height={300}>
-                  </Image>
-                </Col>
-                <Col as={motion.div} whileHover={{ scale: 1.2, rotateX: 360, duration: 0.5 }}>
-                  <Link href="#contattaci">Contattaci</Link>
-                </Col>
-                <Col as={motion.div} whileHover={{ scale: 1.2, rotateX: 360, duration: 0.5 }}>
-                  <Link href="/faq">FAQ</Link>
-                </Col>
-              </Row>
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
-
-        <Col xs={12}>
-          <motion.div
-            variants={variantTitleContainerChild}
-            className="titleBorder">
-            <motion.div
-              className="title-container"
-              variants={variantTitleChild}
-              initial="hidden"
-              animate="visible">
-              <motion.h1 variants={variantTitleh1}>Elevate</motion.h1>
-              <motion.h2 variants={variantTitleh2}>What The F*cking Marketing</motion.h2>
-            </motion.div>
-          </motion.div>
-        </Col>
-      </Row>
-
-
+                <Image
+                  alt="LOGO"
+                  src="/prisma.1.png"
+                  width={300}
+                  height={300}>
+                </Image>
+              </Col>
+              <Col as={motion.div} whileHover={{ scale: 1.2, rotateX: 360, duration: 0.5 }}>
+                <Link href="#contatti">Contattaci</Link>
+              </Col>
+              <Col as={motion.div} whileHover={{ scale: 1.2, rotateX: 360, duration: 0.5 }}>
+                <Link href="/faq">FAQ</Link>
+              </Col>
+            </Row>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+      <motion.div
+        variants={variantTitleContainerChild}
+        className="titleBorder">
+        <motion.div
+          className="title-container"
+          variants={variantTitleChild}
+          initial="hidden"
+          animate="visible">
+          <motion.h1 variants={variantTitleh1}>Elevate</motion.h1>
+          <motion.h2 variants={variantTitleh2}>What The F*cking Marketing</motion.h2>
+        </motion.div>
+      </motion.div>
     </motion.div>
   )
 }
