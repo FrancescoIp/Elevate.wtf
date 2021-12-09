@@ -1,9 +1,11 @@
+
+
 .titleBorder{
   text-align: center;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   padding: 1rem 0;
-  margin-top: 4rem;
+  margin: 2rem 0;
 }
 
 .title-container h1{
@@ -20,7 +22,13 @@
 .menu-navigazione a{
   font-size: 1.5em;
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
+}
+
+.sub-title-h3{
+  padding: 0 1rem;
+  margin: 5rem 0;
+  text-align: center;
 }
 
 

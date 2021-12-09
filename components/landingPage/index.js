@@ -20,12 +20,13 @@ const variantsBody = {
 function LandingPage() {
   return (
     <motion.div 
+     className="BG-container"
      variants={variantsBody}
      initial="hidden"
      animate="visible"
     >
       <Header />
-      <Carosello />
+      {/* <Carosello /> */}
       <Servizi />
       <Contatti />
     </motion.div>

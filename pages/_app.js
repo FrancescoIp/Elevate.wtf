@@ -3,6 +3,7 @@ import '../components/header.css'
 import '../components/landingPage/servizi.css'
 import '../components/contatti/contatti.css'
 import '../components/footer.css'
+import '../components/landingPage/index.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import Head from "next/head";
 

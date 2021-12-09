@@ -68,10 +68,26 @@ const variantTitleh2 = {
     }
   }
 }
+const variantTitleh3 = {
+  hidden: {
+    y: "-50vh",
+    opacity: 0
+  },
+  visible: {
+    y: "0vh",
+    opacity: 1,
+    transition: {
+      type: "spring",
+      stiffness: 50,
+      delay: 3.5
+    }
+  }
+}
 
 function Header() {
   return (
     <motion.div
+      className="BG-header"
       initial="hidden"
       animate="visible"
       variants={variantsNavContainer}
@@ -85,7 +101,7 @@ function Header() {
                 <Link href="/">Home</Link>
               </Col>
               <Col as={motion.div} whileHover={{ scale: 1.2, rotateX: 360, duration: 0.5 }}>
-                <Link href="#servizi">Servizi</Link>
+                <Link href="/#servizi">Servizi</Link>
               </Col>
               <Col
                 as={motion.div}
@@ -100,7 +116,7 @@ function Header() {
                 </Image>
               </Col>
               <Col as={motion.div} whileHover={{ scale: 1.2, rotateX: 360, duration: 0.5 }}>
-                <Link href="#contatti">Contattaci</Link>
+                <Link href="/#contatti">Contattaci</Link>
               </Col>
               <Col as={motion.div} whileHover={{ scale: 1.2, rotateX: 360, duration: 0.5 }}>
                 <Link href="/faq">FAQ</Link>
@@ -120,6 +136,11 @@ function Header() {
           <motion.h1 variants={variantTitleh1}>Elevate</motion.h1>
           <motion.h2 variants={variantTitleh2}>What The F*cking Marketing</motion.h2>
         </motion.div>
+      </motion.div>
+      <motion.div variants={variantTitleh3} className="sub-title-h3">
+        <h3>
+          Eleva la presenza online del tuo business, sfrutta le potenzialità del web marketing 3.0!
+        </h3>
       </motion.div>
     </motion.div>
   )

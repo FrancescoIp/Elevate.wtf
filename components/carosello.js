@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 function Carosello() {
   return (
-    <Carousel style={{margin: "1em 0"}}>
+    <Carousel>
       <Carousel.Item interval={1000}>
         <Image
           className="d-block w-100"
