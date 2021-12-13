@@ -83,6 +83,8 @@ function Servizio2() {
     >
       <Col as={motion.div} xs={4}>
         <Image
+          blurDataURL="/blur-test.png"
+          placeholder="blur"
           alt="webdev"
           src="/webdevPic.png"
           width={300}
