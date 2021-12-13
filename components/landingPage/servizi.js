@@ -43,6 +43,8 @@ function Servizio1() {
       </Col>
       <Col as={motion.div} xs={4}>
         <Image
+          blurDataURL="/blur-test.png"
+          placeholder="blur"
           alt="socialMedia"
           src="/socialMediaPic.png"
           width={300}
@@ -144,6 +146,8 @@ function Servizio3() {
       </Col>
       <Col as={motion.div} xs={4}>
         <Image
+          blurDataURL="/blur-test.png"
+          placeholder="blur"
           alt="graphicPic"
           src="/graphicPic.png"
           width={300}
